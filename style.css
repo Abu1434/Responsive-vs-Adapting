@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box p {
+    color: white; 
+  }
+  
+  /* 
+  
+    Max-width vs Min-width 
+  - @media only screen and .....
+  - Most popular breakpoints
+  - 320px — 576px: Mobile devices
+  - 576px — 768px: iPads, Tablets
+  - 768px — 1024px: Small screens, laptops
+  - 1024px — 1200px: Desktops, large screens
+  - 1200px and more — Extra large screens
+  
+  */
+
+  @media (max-width: 1600px) {
+    body{
+      background-color: black;
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .box {
+      background-color: red;
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  @media (max-width: 1237px) {
+    body{
+      background-color: yellowgreen;
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .box {
+      background-color: blue;
+      width: 30%;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 1064px) {
+    body{
+      background-color: red;
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .box {
+      background-color: black;
+      width: 220px;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 920px) {
+    body{
+      background-color: yellowgreen;
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .box {
+      background-color: blue;
+      width: 180px;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 770px) {
+    body{
+      background-color: blueviolet;
+    }
+    .row{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .box {
+      background-color: coral;
+      width: 200px;
+      height: 200px;
+    }
+  }
